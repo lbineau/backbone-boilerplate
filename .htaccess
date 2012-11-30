@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+    Options -MultiViews
+
+    RewriteEngine On
+    RewriteBase /backbone-boilerplate_statemachine/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.html [L]
+</IfModule>

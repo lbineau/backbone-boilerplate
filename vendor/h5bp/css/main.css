@@ -133,13 +133,13 @@ textarea {
 }
 
 /*
- * Hide from both screenreaders and browsers: h5bp.com/u
+ * Hide from both screenreaders and browsers: h5bp.com/u CONFLICT WITH .hidden add by statemachine
  */
 
-.hidden {
+/*.hidden {
     display: none !important;
     visibility: hidden;
-}
+}*/
 
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
@@ -172,13 +172,13 @@ textarea {
 }
 
 /*
- * Hide visually and from screenreaders, but maintain layout
+ * Hide visually and from screenreaders, but maintain layout CONFLICT WITH .hidden add by statemachine
  */
-
+/*
 .invisible {
     visibility: hidden;
 }
-
+*/
 /*
  * Clearfix: contain floats
  *

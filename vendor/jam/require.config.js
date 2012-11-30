@@ -11,6 +11,11 @@ var jam = {
             "main": "backbone.layoutmanager.js"
         },
         {
+            "name": "backbone.statemachine",
+            "location": "../vendor/jam/backbone.statemachine",
+            "main": "backbone.statemachine.js"
+        },
+        {
             "name": "jquery",
             "location": "../vendor/jam/jquery",
             "main": "jquery.js"
@@ -37,6 +42,14 @@ var jam = {
                 "lodash"
             ],
             "exports": "Backbone.LayoutManager"
+        },
+        "backbone.statemachine": {
+            "deps": [
+                "jquery",
+                "backbone",
+                "lodash"
+            ],
+            "exports": "Backbone.StateMachine"
         }
     }
 };

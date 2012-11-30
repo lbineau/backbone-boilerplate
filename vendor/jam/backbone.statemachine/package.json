@@ -1,0 +1,47 @@
+{
+  "author": "(@sebpiq)",
+  "name": "backbone.statemachine",
+  "description": "A small javascript library to add state machine capacities to any Backbone or non-Backbone object",
+
+  "version": "1.0.0",
+
+  "homepage": "https://github.com/sebpiq/backbone.statemachine/",
+
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sebpiq/backbone.statemachine.git"
+  },
+
+  "main": "node/index",
+
+  "engines": {
+    "node": ">=0.6"
+  },
+
+  "dependencies": {
+    "backbone": "0.9.2",
+    "underscore.deferred": "0.2.0",
+    "cheerio": "0.10.1"
+  },
+
+  "devDependencies": {
+    "grunt-remove-logging": "0.0.5"
+  },
+
+  "jam": {
+    "dependencies": {
+      "lodash": "*",
+      "backbone": "*",
+      "jquery": "*"
+    },
+
+    "include": ["backbone.statemachine.js"],
+
+    "main": "backbone.statemachine.js",
+
+    "shim": {
+      "deps": ["jquery", "backbone", "lodash"],
+      "exports": "Backbone.StateMachine"
+    }
+  }
+}

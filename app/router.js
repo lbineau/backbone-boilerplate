@@ -1,9 +1,10 @@
 define([
   // Application.
-  "app"
+  "app",
+  "views/ashowhide"
 ],
 
-function(app) {
+function(app, AShowHide) {
 
   // Defining the application router, you can attach sub routers here.
   var Router = Backbone.Router.extend({

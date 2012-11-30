@@ -3,10 +3,13 @@ require([
   "app",
 
   // Main Router.
-  "router"
+  "router",
+
+  // Views
+  "views/troll"
 ],
 
-function(app, Router) {
+function(app, Router, TrollView) {
 
   // Define your master router on the application namespace and trigger all
   // navigation from this instance.
@@ -15,6 +18,8 @@ function(app, Router) {
   // Trigger the initial route and enable HTML5 History API support, set the
   // root folder to '/' by default.  Change in app.js.
   Backbone.history.start({ pushState: true, root: app.root });
+
+  //app.router.navigate(app.root, {trigger: true, replace: true});
 
   // All navigation that is relative should be passed through the navigate
   // method, to be processed by the router. If the link has a `data-bypass`
@@ -38,4 +43,9 @@ function(app, Router) {
     }
   });
 
+
+  // ENTRY POINT
+  // Use the layout defined above, create a new Backbone.View and insert it
+  // into the header, and then render.
+  app.useLayout().setView("#content", new TrollView()).render();
 });

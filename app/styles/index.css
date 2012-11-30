@@ -2,5 +2,23 @@
 
 @import "../../vendor/h5bp/css/normalize.css";
 @import "../../vendor/h5bp/css/main.css";
+@import "http://fonts.googleapis.com/css?family=Rambla:400,700,400italic,700italic";
 
 /*-- Application stylesheets. -----------------------------------------------*/
+body{
+	text-align: center;
+}
+h1{
+	font-family: 'Rambla', sans-serif;
+}
+.backbone-statemachine .animation{
+	min-height: 400px;
+	width: 100%;
+}
+
+.backbone-statemachine.invisible .animation{
+	background: transparent url('../../medias/images/tumblr_mbjyntMeNE1rroa7eo1_400.gif') no-repeat bottom center;
+}
+.backbone-statemachine.visible .animation{
+	background: transparent url('../../medias/images/trololol.gif') no-repeat bottom center;
+}

@@ -1,12 +1,13 @@
 define([
-  "backbone.layoutmanager"
+  "backbone.layoutmanager",
+  "backbone.statemachine"
 ], function() {
 
   // Provide a global location to place configuration settings and module
   // creation.
   var app = {
     // The root path to run the application.
-    root: "/"
+    root: "/backbone-boilerplate_statemachine/"
   };
 
   // Localize or create a new JavaScript Template object.
